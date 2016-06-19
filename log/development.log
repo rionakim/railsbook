@@ -2502,3 +2502,847 @@ Processing by BooksController#new as HTML
   Rendered books/_form.html.erb (24.7ms)
   Rendered books/new.html.erb within layouts/application (33.3ms)
 Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2016-06-20 00:25:33 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 296ms (Views: 284.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new" for ::1 at 2016-06-20 00:25:49 +0900
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.erb (26.7ms)
+  Rendered books/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1" for ::1 at 2016-06-20 00:25:56 +0900
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/1/edit" for ::1 at 2016-06-20 00:25:59 +0900
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (7.8ms)
+  Rendered books/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/1" for ::1 at 2016-06-20 00:26:13 +0900
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/1/edit" for ::1 at 2016-06-20 00:26:17 +0900
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (3.8ms)
+  Rendered books/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/2" for ::1 at 2016-06-20 00:26:25 +0900
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/10" for ::1 at 2016-06-20 00:26:29 +0900
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/10/edit" for ::1 at 2016-06-20 00:26:34 +0900
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered books/_form.html.erb (3.7ms)
+  Rendered books/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2016-06-20 00:28:05 +0900
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for ::1 at 2016-06-20 00:33:43 +0900
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.erb (3.3ms)
+  Rendered books/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2016-06-20 00:40:50 +0900
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/1/edit" for ::1 at 2016-06-20 00:40:53 +0900
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/_form.html.erb (3.6ms)
+  Rendered books/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for ::1 at 2016-06-20 00:49:45 +0900
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2016-06-20 00:49:45 +0900
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.1ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2016-06-20 00:49:45 +0900
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.5ms)
+
+
+Started GET "/books" for ::1 at 2016-06-20 00:49:45 +0900
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2016-06-20 00:49:45 +0900
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.4ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2016-06-20 00:49:45 +0900
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.1ms)
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20160618135522)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160618135522"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateJoinTableAuthorBook (20160619155402)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "autheors_books" ("autheor_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160619155402"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20160619155458)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160619155458"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateAuthors (20160619155550)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619155550"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateFanComments (20160619155634)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619155634"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateMemos (20160619155705)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619155705"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("user_id", "name", "birth", "address", "ctype", "photo", "created_at", "updated_at", "id") VALUES (NULL, 'MyString', '2016-06-20', 'MyText', 'MyString', NULL, '2016-06-19 15:58:32', '2016-06-19 15:58:32', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "authors" ("user_id", "name", "birth", "address", "ctype", "photo", "created_at", "updated_at", "id") VALUES (NULL, 'MyString', '2016-06-20', 'MyText', 'MyString', NULL, '2016-06-19 15:58:32', '2016-06-19 15:58:32', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "books"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', '안드로이드 개발자를 위한 자바', 33600, '제이펍', '2013-08-20', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', '자바스크립트 라이브러리 실전 활용', 27090, '제이펍', '2013-03-19', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4 포켓 레퍼런스', 29190, '제이펍', '2012-01-26', 't', '2016-06-19 15:58:32', '2016-06-19 15:58:32')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '함께 공부하는 SQL', 23100, '인사이트', '2013-04-22', 't', '2016-06-19 15:58:32', '2016-06-19 15:58:32')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', '처음 시작하는 안드로이드 애플리케이션 개발', 31500, '한빛아카데미', '2012-11-22', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10일 만에 살펴보는 PHP 입문 교실', 33600, '한빛미디어', '2012-09-13', 't', '2016-06-19 15:58:32', '2016-06-19 15:58:32')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'HTML5 애플리케이션 개발 입문', 19950, '인사이트', '2012-06-07', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 개발 포켓 레퍼런스', 27090, '한빛미디어', '2012-04-17', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '혼자 공부하는 Java 서버 사이드 개발', 37800, '한빛미디어', '2013-01-28', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CS를 사용한 iPhone 프로그래밍', 26250, '길벗', '2011-08-16', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "fan_comments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, 'MyString', 'MyText', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, 'MyString', 'MyText', 'f', '2016-06-19 15:58:32', '2016-06-19 15:58:32', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "memos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 15:58:32', '2016-06-19 15:58:32', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 15:58:32', '2016-06-19 15:58:32', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'f', 'MyString', 1, '2016-06-19 15:58:32', '2016-06-19 15:58:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'f', 'MyString', 1, '2016-06-19 15:58:32', '2016-06-19 15:58:32', 298486374)
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:01:37', '2016-06-19 16:01:37')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:01:37', '2016-06-19 16:01:37')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:01:37', '2016-06-19 16:01:37')[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (3.9ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "autheors_books" ("autheor_id" integer NOT NULL, "book_id" integer NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155705')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160618135522')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155402')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155458')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155550')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155634')[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "autheors_books" ("autheor_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155705')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160618135522')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155402')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155458')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155550')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155634')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:02:00', '2016-06-19 16:02:00')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:02:00', '2016-06-19 16:02:00')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:02:00', '2016-06-19 16:02:00')[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "autheors_books" ("autheor_id" integer NOT NULL, "book_id" integer NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155705')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160618135522')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155402')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155458')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155550')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155634')[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "autheors_books" ("autheor_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155705')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160618135522')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155402')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155458')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155550')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155634')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:03:12', '2016-06-19 16:03:12')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:03:12', '2016-06-19 16:03:12')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:03:12', '2016-06-19 16:03:12')[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:03:20', '2016-06-19 16:03:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:03:20', '2016-06-19 16:03:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:03:20', '2016-06-19 16:03:20')[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:06:25', '2016-06-19 16:06:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:06:25', '2016-06-19 16:06:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:06:25', '2016-06-19 16:06:25')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:06:42', '2016-06-19 16:06:42')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:06:42', '2016-06-19 16:06:42')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:06:42', '2016-06-19 16:06:42')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (4.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:10:10', '2016-06-19 16:10:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:10:10', '2016-06-19 16:10:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:10:10', '2016-06-19 16:10:10')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20160618135522)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160618135522"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20160619155458)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160619155458"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateAuthors (20160619155550)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619155550"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateFanComments (20160619155634)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619155634"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateMemos (20160619155705)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619155705"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateJoinTableAuthorBook (20160619162039)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "authors_books" ("author_id" integer NOT NULL, "book_id" integer NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619162039"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:21:15', '2016-06-19 16:21:15')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (3, 2)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (4, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (5, 1)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (6, 3)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (7, 3)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (8, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (9, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (10, 3)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', '안드로이드 개발자를 위한 자바', 33600, '제이펍', '2013-08-20', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', '자바스크립트 라이브러리 실전 활용', 27090, '제이펍', '2013-03-19', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4 포켓 레퍼런스', 29190, '제이펍', '2012-01-26', 't', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '함께 공부하는 SQL', 23100, '인사이트', '2013-04-22', 't', '2016-06-19 16:21:15', '2016-06-19 16:21:15')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', '처음 시작하는 안드로이드 애플리케이션 개발', 31500, '한빛아카데미', '2012-11-22', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10일 만에 살펴보는 PHP 입문 교실', 33600, '한빛미디어', '2012-09-13', 't', '2016-06-19 16:21:15', '2016-06-19 16:21:15')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'HTML5 애플리케이션 개발 입문', 19950, '인사이트', '2012-06-07', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 개발 포켓 레퍼런스', 27090, '한빛미디어', '2012-04-17', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '혼자 공부하는 Java 서버 사이드 개발', 37800, '한빛미디어', '2013-01-28', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CS를 사용한 iPhone 프로그래밍', 26250, '길벗', '2011-08-16', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "fan_comments"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '윤명월', '친절하게 설명해줘서 좋았어요!', 't', '2016-06-19 16:21:15', '2016-06-19 16:21:15', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '남기주', '기초부터 차근차근 알려주는 책인 것 같아요.', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '연하진', '서로 대화하는듯한 설명이 마음에 들었어요.', 'f', '2016-06-19 16:21:15', '2016-06-19 16:21:15', 113629430)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "memos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:21:15', '2016-06-19 16:21:15', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:21:15', '2016-06-19 16:21:15', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "reviews"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "authors_books" ("author_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619162039')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160618135522')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155458')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155550')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155634')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155705')[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  CREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "authors_books" ("author_id" integer NOT NULL, "book_id" integer NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619162039')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160618135522')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155458')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155550')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155634')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155705')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:21:41', '2016-06-19 16:21:41')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (3, 2)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (4, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (5, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (6, 3)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (7, 3)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (8, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (9, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (10, 3)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', '안드로이드 개발자를 위한 자바', 33600, '제이펍', '2013-08-20', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', '자바스크립트 라이브러리 실전 활용', 27090, '제이펍', '2013-03-19', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4 포켓 레퍼런스', 29190, '제이펍', '2012-01-26', 't', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '함께 공부하는 SQL', 23100, '인사이트', '2013-04-22', 't', '2016-06-19 16:21:41', '2016-06-19 16:21:41')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', '처음 시작하는 안드로이드 애플리케이션 개발', 31500, '한빛아카데미', '2012-11-22', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10일 만에 살펴보는 PHP 입문 교실', 33600, '한빛미디어', '2012-09-13', 't', '2016-06-19 16:21:41', '2016-06-19 16:21:41')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'HTML5 애플리케이션 개발 입문', 19950, '인사이트', '2012-06-07', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 개발 포켓 레퍼런스', 27090, '한빛미디어', '2012-04-17', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '혼자 공부하는 Java 서버 사이드 개발', 37800, '한빛미디어', '2013-01-28', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CS를 사용한 iPhone 프로그래밍', 26250, '길벗', '2011-08-16', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "fan_comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '윤명월', '친절하게 설명해줘서 좋았어요!', 't', '2016-06-19 16:21:41', '2016-06-19 16:21:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '남기주', '기초부터 차근차근 알려주는 책인 것 같아요.', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '연하진', '서로 대화하는듯한 설명이 마음에 들었어요.', 'f', '2016-06-19 16:21:41', '2016-06-19 16:21:41', 113629430)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "memos"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:21:41', '2016-06-19 16:21:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:21:41', '2016-06-19 16:21:41', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "reviews"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:21:50', '2016-06-19 16:21:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (3, 2)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (4, 2)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (5, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (6, 3)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (7, 3)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (8, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (9, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (10, 3)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', '안드로이드 개발자를 위한 자바', 33600, '제이펍', '2013-08-20', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', '자바스크립트 라이브러리 실전 활용', 27090, '제이펍', '2013-03-19', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4 포켓 레퍼런스', 29190, '제이펍', '2012-01-26', 't', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '함께 공부하는 SQL', 23100, '인사이트', '2013-04-22', 't', '2016-06-19 16:21:50', '2016-06-19 16:21:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', '처음 시작하는 안드로이드 애플리케이션 개발', 31500, '한빛아카데미', '2012-11-22', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10일 만에 살펴보는 PHP 입문 교실', 33600, '한빛미디어', '2012-09-13', 't', '2016-06-19 16:21:50', '2016-06-19 16:21:50')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'HTML5 애플리케이션 개발 입문', 19950, '인사이트', '2012-06-07', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 개발 포켓 레퍼런스', 27090, '한빛미디어', '2012-04-17', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '혼자 공부하는 Java 서버 사이드 개발', 37800, '한빛미디어', '2013-01-28', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CS를 사용한 iPhone 프로그래밍', 26250, '길벗', '2011-08-16', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "fan_comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '윤명월', '친절하게 설명해줘서 좋았어요!', 't', '2016-06-19 16:21:50', '2016-06-19 16:21:50', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '남기주', '기초부터 차근차근 알려주는 책인 것 같아요.', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '연하진', '서로 대화하는듯한 설명이 마음에 들었어요.', 'f', '2016-06-19 16:21:50', '2016-06-19 16:21:50', 113629430)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "memos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:21:50', '2016-06-19 16:21:50', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:21:50', '2016-06-19 16:21:50', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "reviews"
+  [1m[36m (4.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReviews (20160619162352)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "book_id" integer, "user_id" integer, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_reviews_on_book_id" ON "reviews" ("book_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160619162352"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "authors_books" ("author_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "book_id" integer, "user_id" integer, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_reviews_on_book_id" ON "reviews" ("book_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619162352')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160618135522')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155458')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155550')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155634')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155705')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619162039')
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "authors_books" ("author_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memorable_type" varchar, "memorable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "book_id" integer, "user_id" integer, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_reviews_on_book_id" ON "reviews" ("book_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619162352')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160618135522')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155458')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155550')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619155634')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160619155705')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160619162039')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '윤인성', '1991-12-09', '서울특별시 강서구', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '연하진', '1991-02-14', '서울특별시 강서구', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '김연화', '1989-10-15', '서울특별시 마포구', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (3, 2)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (4, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (5, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (6, 3)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (7, 3)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (8, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (9, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (10, 3)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', '안드로이드 개발자를 위한 자바', 33600, '제이펍', '2013-08-20', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', '자바스크립트 라이브러리 실전 활용', 27090, '제이펍', '2013-03-19', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4 포켓 레퍼런스', 29190, '제이펍', '2012-01-26', 't', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '함께 공부하는 SQL', 23100, '인사이트', '2013-04-22', 't', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', '처음 시작하는 안드로이드 애플리케이션 개발', 31500, '한빛아카데미', '2012-11-22', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10일 만에 살펴보는 PHP 입문 교실', 33600, '한빛미디어', '2012-09-13', 't', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'HTML5 애플리케이션 개발 입문', 19950, '인사이트', '2012-06-07', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 개발 포켓 레퍼런스', 27090, '한빛미디어', '2012-04-17', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '혼자 공부하는 Java 서버 사이드 개발', 37800, '한빛미디어', '2013-01-28', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CS를 사용한 iPhone 프로그래밍', 26250, '길벗', '2011-08-16', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "fan_comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '윤명월', '친절하게 설명해줘서 좋았어요!', 't', '2016-06-19 16:24:50', '2016-06-19 16:24:50', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '남기주', '기초부터 차근차근 알려주는 책인 것 같아요.', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '연하진', '서로 대화하는듯한 설명이 마음에 들었어요.', 'f', '2016-06-19 16:24:50', '2016-06-19 16:24:50', 113629430)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "memos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:24:50', '2016-06-19 16:24:50', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "memos" ("memorable_type", "memorable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2016-06-19 16:24:50', '2016-06-19 16:24:50', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "reviews"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (1, 1, 2, 'Android 개발을 할 것이라면 꼭 읽었으면 좋겠어요!', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (2, 1, 3, 'Java 기본을 다시 살펴보고 싶을 때마다 펴보고 있는 책이에요.', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (3, 2, 2, '굉장히 유용합니다. 다양한 라이브러리를 소개해줍니다.', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (4, 2, 4, '친절한 설명에 예제도 많아서 좋습니다.', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (5, 2, 5, '초보자에게는 조금 어려울 수 있을 것 같습니다.', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (6, 3, 1, '그림과 예제가 많아서 초보자인 저도 쉽게 이해할 수 있었어요!', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (7, 3, 1, '내용이 좋습니다.', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (8, 4, 5, '데이터베이스를 처음 공부해서 조금 어려웠지만 이제 잘 사용할 수 있을 것 같아요!', '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (9, 5, 3, '기초부터 응용까지 모두 다루어주고 있습니다. 이 책 한 권으로도 안드로이드 개발을 끝낼 수 있을 것 같아요.', '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (1, 'arint', '2cf00a11121ad260ed32b290f9aefa01279bd5a2', '5f90a188468f64998c5a', 'testA@test.com', 't', 'admin,manager', 2, '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (2, 'hasat', '9be7f45387af4f7bbe720d16a6f334503b5c4f81', '5f90a188468f64998c5b', 'testD@test.com', 'f', 'admin', 2, '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (3, 'hiana', '6cc09597819748465c6a2603a6f7a52d51eb01ef', '5f90a188468f64998c5c', 'testE@test.com', 't', 'manager', 2, '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (4, 'rant', '06780c9b144eaf8dc0c8c6ded18afb032cac9b5e', '5f90a188468f64998c5d', 'testF@test.com', 'f', 'member', 1, '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (5, 'gurum', '088aac29e5ea1bfd8879eaf3b621bdd3d31f072e', '5f90a188468f64998c5e', 'testG@test.com', 't', 'member', 2, '2016-06-19 16:24:50', '2016-06-19 16:24:50')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (6, 'nkakeya', 'c599f512c00d8bbb9fd883f28b9555213516f88e', '5f90a188468f64998c5f', 'testG@test.com', 't', 'manager,member', 0, '2016-06-19 16:24:50', '2016-06-19 16:24:50')
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
